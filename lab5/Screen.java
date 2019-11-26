@@ -1,5 +1,8 @@
 package test;
 
+import java.awt.Dimension;
+import java.awt.Font;
+
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
@@ -22,8 +25,8 @@ public class Screen extends JFrame{
 	JLabel nameL = new JLabel("Product name");
 	JLabel amountL = new JLabel("Amount");
 	JLabel desL = new JLabel("Description");
+	JLabel listL = new JLabel("Product List");
 	
-	Draw ve = new Draw();
 	
 	public Screen() {
 		setSize(700,500);
@@ -44,24 +47,29 @@ public class Screen extends JFrame{
 		b2.setText("Remove");
 		panel.add(b2);
 		
-		
-		nameL.setBounds(50, 40, 90, 50);
+		nameL.setFont(new Font("Arial",Font.BOLD,15));
+		nameL.setBounds(50, 40, 110, 50);
 		name.setBounds(200, 50, 200, 30);
 		panel.add(name);
 		panel.add(nameL);
 		
+		amountL.setFont(new Font("Arial",Font.BOLD,15));
 		amountL.setBounds(50, 80, 90, 50);
 		amount.setBounds(200, 90, 200, 30);
 		panel.add(amount);
 		panel.add(amountL);
 		
+		desL.setFont(new Font("Arial",Font.BOLD,15));
 		desL.setBounds(50,120,90,50);
 		des.setBounds(200, 130, 200, 100);
 		panel.add(des);
 		panel.add(desL);
 		
+		listL.setFont(new Font("Arial",Font.BOLD,25));
+		listL.setBounds(470, 40, 150, 50);
 		list.setBounds(450, 90, 200, 140);
 		panel.add(list);
+		panel.add(listL);
 		
 		
 //		add(ve);
