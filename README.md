@@ -1,1 +1,1 @@
-A simple Flappy bird game using Java Spring.
+This is where I save simple project i worked myself.
