@@ -1,3 +1,3 @@
 Simple Snake game using Java.
 
-Idex file: Screen.java
+Index file: Screen.java
