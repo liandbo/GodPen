@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Solve Sudoku</title>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<div class="block">
+		<div class="top">
+			<div class="content is-large">
+				<h1>Here is the result</h1>
+			</div>
+		</div>
+		<div class="block">
+			<div class="line">
+				<input class="cell" id="cell1" type="text" name="cell" readonly>
+				<input class="cell" id="cell2" type="text" name="cell" readonly>
+				<input class="cell" id="cell3" type="text" name="cell" readonly>
+				<input class="cell" id="cell4" type="text" name="cell" readonly>
+				<input class="cell" id="cell5" type="text" name="cell" readonly>
+				<input class="cell" id="cell6" type="text" name="cell" readonly>
+				<input class="cell" id="cell7" type="text" name="cell" readonly>
+				<input class="cell" id="cell8" type="text" name="cell" readonly>
+				<input class="cell" id="cell9" type="text" name="cell" readonly>
+			</div>
+			<div class="line">
+				<input class="cell" id="cell10" type="text" name="cell" readonly>
+				<input class="cell" id="cell11" type="text" name="cell" readonly>
+				<input class="cell" id="cell12" type="text" name="cell" readonly>
+				<input class="cell" id="cell13" type="text" name="cell" readonly>
+				<input class="cell" id="cell14" type="text" name="cell" readonly>
+				<input class="cell" id="cell15" type="text" name="cell" readonly>
+				<input class="cell" id="cell16" type="text" name="cell" readonly>
+				<input class="cell" id="cell17" type="text" name="cell" readonly>
+				<input class="cell" id="cell18" type="text" name="cell" readonly>
+			</div>
+			<div class="line">
+				<input class="cell" id="cell19" type="text" name="cell" readonly>
+				<input class="cell" id="cell20" type="text" name="cell" readonly>
+				<input class="cell" id="cell21" type="text" name="cell" readonly>
+				<input class="cell" id="cell22" type="text" name="cell" readonly>
+				<input class="cell" id="cell23" type="text" name="cell" readonly>
+				<input class="cell" id="cell24" type="text" name="cell" readonly>
+				<input class="cell" id="cell25" type="text" name="cell" readonly>
+				<input class="cell" id="cell26" type="text" name="cell" readonly>
+				<input class="cell" id="cell27" type="text" name="cell" readonly>
+			</div>
+			<div class="line">
+				<input class="cell" id="cell28" type="text" name="cell" readonly>
+				<input class="cell" id="cell29" type="text" name="cell" readonly>
+				<input class="cell" id="cell30" type="text" name="cell" readonly>
+				<input class="cell" id="cell31" type="text" name="cell" readonly>
+				<input class="cell" id="cell32" type="text" name="cell" readonly>
+				<input class="cell" id="cell33" type="text" name="cell" readonly>
+				<input class="cell" id="cell34" type="text" name="cell" readonly>
+				<input class="cell" id="cell35" type="text" name="cell" readonly>
+				<input class="cell" id="cell36" type="text" name="cell" readonly>
+			</div>
+			<div class="line">
+				<input class="cell" id="cell37" type="text" name="cell" readonly>
+				<input class="cell" id="cell38" type="text" name="cell" readonly>
+				<input class="cell" id="cell39" type="text" name="cell" readonly>
+				<input class="cell" id="cell40" type="text" name="cell" readonly>
+				<input class="cell" id="cell41" type="text" name="cell" readonly>
+				<input class="cell" id="cell42" type="text" name="cell" readonly>
+				<input class="cell" id="cell43" type="text" name="cell" readonly>
+				<input class="cell" id="cell44" type="text" name="cell" readonly>
+				<input class="cell" id="cell45" type="text" name="cell" readonly>
+			</div>
+			<div class="line">
+				<input class="cell" id="cell46" type="text" name="cell" readonly>
+				<input class="cell" id="cell47" type="text" name="cell" readonly>
+				<input class="cell" id="cell48" type="text" name="cell" readonly>
+				<input class="cell" id="cell49" type="text" name="cell" readonly>
+				<input class="cell" id="cell50" type="text" name="cell" readonly>
+				<input class="cell" id="cell51" type="text" name="cell" readonly>
+				<input class="cell" id="cell52" type="text" name="cell" readonly>
+				<input class="cell" id="cell53" type="text" name="cell" readonly>
+				<input class="cell" id="cell54" type="text" name="cell" readonly>
+			</div>
+			<div class="line">
+				<input class="cell" id="cell55" type="text" name="cell" readonly>
+				<input class="cell" id="cell56" type="text" name="cell" readonly>
+				<input class="cell" id="cell57" type="text" name="cell" readonly>
+				<input class="cell" id="cell58" type="text" name="cell" readonly>
+				<input class="cell" id="cell59" type="text" name="cell" readonly>
+				<input class="cell" id="cell60" type="text" name="cell" readonly>
+				<input class="cell" id="cell61" type="text" name="cell" readonly>
+				<input class="cell" id="cell62" type="text" name="cell" readonly>
+				<input class="cell" id="cell63" type="text" name="cell" readonly>
+			</div>
+			<div class="line">
+				<input class="cell" id="cell64" type="text" name="cell" readonly>
+				<input class="cell" id="cell65" type="text" name="cell" readonly>
+				<input class="cell" id="cell66" type="text" name="cell" readonly>
+				<input class="cell" id="cell67" type="text" name="cell" readonly>
+				<input class="cell" id="cell68" type="text" name="cell" readonly>
+				<input class="cell" id="cell69" type="text" name="cell" readonly>
+				<input class="cell" id="cell70" type="text" name="cell" readonly>
+				<input class="cell" id="cell71" type="text" name="cell" readonly>
+				<input class="cell" id="cell72" type="text" name="cell" readonly>
+			</div>
+			<div class="line">
+				<input class="cell" id="cell73" type="text" name="cell" readonly>
+				<input class="cell" id="cell74" type="text" name="cell" readonly>
+				<input class="cell" id="cell75" type="text" name="cell" readonly>
+				<input class="cell" id="cell76" type="text" name="cell" readonly>
+				<input class="cell" id="cell77" type="text" name="cell" readonly>
+				<input class="cell" id="cell78" type="text" name="cell" readonly>
+				<input class="cell" id="cell79" type="text" name="cell" readonly>
+				<input class="cell" id="cell80" type="text" name="cell" readonly>
+				<input class="cell" id="cell81" type="text" name="cell" readonly>
+			</div>		
+		</div>
+		<div class="end">
+			<button class="button" onclick="Click()">New Sudoku</button>
+		</div>
+	</div>
+
+	<script type="text/javascript">
+		let list = [];
+		for(i=0;i<81;i++){
+			list.push(localStorage.getItem(i));
+		}
+		console.log(list);
+		for (let i = 0; i < 81; i++) {
+				let a = i + 1;
+  				let aa = "cell" + a;
+  				document.getElementById(aa).value = list[i];
+			}
+		function Click(){
+			if (confirm('Do you want to solve a new sudoku?')) {
+           		localStorage.clear();
+				location.replace("index.html");
+	       	} else {
+	           	return false;
+	       	}
+			
+		}
+	</script>
+
+
+</body>
+</html>
